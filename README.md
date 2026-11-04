@@ -1,41 +1,34 @@
-# Personal Website / Portfolio
+# Andrew Kurtz — Personal Website
 
-Website name: AFKurtz.github.io
+This is the source for [afkurtz.github.io](https://afkurtz.github.io/), a static portfolio documenting my background in engineering and physics, my completed work, and current and future projects.
 
-This repository contains the source for my GitHub Pages website.
-The goal of this site is twofold:
-1. **Professional Overview**
-- Provide hiring managers and collaborators with a clear snapshot of who I am
-- Highlight my skills, interests, and technical focus areas
-- Showcase completed and ongoing work in an accessible format
+## Structure
 
-2. **Project Development Hub**
-- Maintain Detailed Records of project concepts and experiments
-- Track progress through timelines, milestones, and iteration notes
-- Demonstrate problem-solving process
+```text
+.
+├── index.html                 Home
+├── about_me.html              Background and interests
+├── projects.html              Project categories
+├── finished_projects.html     Completed work
+├── ongoing_projects.html      Work in progress
+├── future_projects.html       Plans and ideas
+└── assets/
+    ├── css/site.css           All website styles
+    ├── images/                Page photos and favicons
+    ├── files/                 Downloadable résumé
+    └── parallax/              Retained for a future effect
+```
 
-Rather than acting as a static résumé, this website is interded to evolve alongside my work
+## How it works
 
-## What You'll Find Here
+The site uses regular HTML and a single handwritten CSS file. There is no build process, JavaScript framework, package manager, or generated CSS. All page links and images use relative URLs, so the site can be opened locally or hosted from the repository root on GitHub Pages.
 
-- Personal background and goals
-- Portfolio highlights
-- Active project logs and roadmaps
-- Archived experiments and ideas
-- Updates as projects progress
+The original visual layout and colors have been recreated in `assets/css/site.css`. The photos, content, and overall page organization are preserved. The homepage icons are embedded SVGs.
 
-## Why This Exists
 
-I believe the process behind building something is just as valuable as the result. By documenting development openly, I aim to:
+## Updating the design
 
-- Show transparency in how I approach challenges
-- Practice structured planning and reflection
-- Create a centralized place for professional visibility
-
-## How it's made
-
-The majority of the code was generated using Mobirise 6.1.12 using free templates. The software makes it easy to build the website visually. Once the website looked good, the code was exported to Visual Studios Code to add additional functionality. Updates to project lists will be made in Visual Studios Code.
-
----
-
-This repository powers the site itself. Content and structure will continue to evolve as new projects begin and existing ones mature.
+- Change colors, typography, spacing, and responsive breakpoints in `assets/css/site.css`.
+- Edit content directly in the corresponding HTML page.
+- Replace pictures in `assets/images/` and update their paths in the HTML or CSS.
+- `assets/parallax/` is intentionally retained for future animation work; it is not loaded by the current pages.
